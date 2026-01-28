@@ -1,7 +1,4 @@
-# COD Builds Collection - Site ⚡️
+# COD Collection - Site ⚡️
 
 -------------------------------------------------------------------
 
-~ Don't download as a .zip file, clone it using `git clone`.
-
-This is a site meant for storing all of my silly uploads. Thanks for the help from Delta.
