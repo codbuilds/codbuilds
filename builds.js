@@ -180,6 +180,22 @@ const buildsData = {
             ]
         },
         {
+            title: "Modern Warfare v1.27",
+            img: "images/mw2019/127.jpg",
+            tags: "Unavailable",
+            links: [
+                { label: "Unavailable", url: "#", disabled: true }
+            ]
+        },
+        {
+            title: "Modern Warfare v1.26",
+            img: "images/mw2019/126.png",
+            tags: "Unavailable",
+            links: [
+                { label: "Unavailable", url: "#", disabled: true }
+            ]
+        },
+        {
             title: "Modern Warfare v1.24",
             img: "images/mw2019/124.jpg",
             tags: "188GB · Full Build",
@@ -393,6 +409,14 @@ const buildsData = {
                 { label: "Download", url: "https://drive.google.com/file/d/1vP4yBKGWXhfadvIbgNmNIXaypLqNzGIi/view?usp=sharing" }
             ]
         },
+                {
+            title: "Modern Warfare 3 (Defiance)",
+            img: "images/other/mw3-ds.jpg",
+            tags: "32MB· Nintendo DS",
+            links: [
+                { label: "Download", url: "https://drive.google.com/file/d/1sykDwTu7q5TujCujEOjmrIXbxMKyM9N_/view?usp=drive_link" }
+            ]
+        },
         {
             title: "Modern Warfare 2 (Alpha)",
             img: "images/other/mw2.jpg",
@@ -400,6 +424,30 @@ const buildsData = {
             links: [
                 { label: "Download", url: "https://drive.google.com/file/d/1XJtV8RF_zs2RgkIDlwQ-TO56TG1bzfK8/view?usp=sharing" }
             ]
-        }
+        },
+        {
+            title: "Modern Warfare 2 (Mobilized)",
+            img: "images/other/mw2-ds.jpg",
+            tags: "35MB· Nintendo DS",
+            links: [
+                { label: "Download", url: "https://drive.google.com/file/d/15RZYfN_Zxnk3aaZi55vAPW1YS5wftsMV/view?usp=drive_link" }
+            ]
+        },
+        {
+            title: "Modern Warfare (2004) (Reflex Edition)",
+            img: "images/other/cod4-reflex.jpg",
+            tags: "4GB· Nintendo WII",
+            links: [
+                { label: "Download", url: "https://drive.google.com/file/d/1UWr9Ip0s8jj3AgbtH_myOPJB-V4dgIHo/view" }
+            ]
+        },
+        {
+            title: "Modern Warfare (2004) (DS Edition)",
+            img: "images/other/cod4-ds.jpg",
+            tags: "31MB· Nintendo DS",
+            links: [
+                { label: "Download", url: "https://drive.google.com/file/d/1IU56CztFwnSyDusGf8fkDLaYGnemgzKP/view?usp=drive_link" }
+            ]
+        },
     ]
 };
