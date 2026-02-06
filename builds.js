@@ -40,7 +40,7 @@ const buildsData = {
         {
             title: "Modern Warfare v1.60",
             img: "images/mw2019/160.jpg",
-            tags: "164GB · MP + WZ",
+            tags: "164GB · Full Build  · Warzone Only",
             links: [
                 { label: "Warzone Only | Buzzheavier", url: "https://buzzheavier.com/lvyoprgngc2r" },
                 { label: "Full Build", url: "https://drive.google.com/file/d/1zfTyYyVPJSlOsfSKyeolKe3soNgLVgee/view?usp=sharing" },
@@ -66,7 +66,7 @@ const buildsData = {
         {
             title: "Modern Warfare v1.52",
             img: "images/mw2019/152.jpg",
-            tags: "70GB · Full Build",
+            tags: "70GB · Warzone Only",
             links: [
                 { label: "Download | Google Drive", url: "https://drive.google.com/file/d/1vq4ZSD9Hk1RFBSweXB7ko6IZsVwcsUUQ/view?usp=sharing" }
             ]
@@ -74,7 +74,7 @@ const buildsData = {
         {
             title: "Modern Warfare v1.46",
             img: "images/mw2019/146.jpg",
-            tags: "77GB · Full Build",
+            tags: "77GB · Warzone Only",
             links: [
                 { label: "Source 1 | Google Drive", url: "https://drive.google.com/drive/folders/1H_w1K2SMNON7p3QVbV4iDDOFpW1zNkQz?usp=sharing" },
                 { label: "Source 2 | Google Drive", url: "https://drive.google.com/file/d/1tO2smr_mq8xwdeOowT2cDgSW9nNuQVS8/view?usp=sharing" }
@@ -100,7 +100,7 @@ const buildsData = {
         {
             title: "Modern Warfare v1.42",
             img: "images/mw2019/142.png",
-            tags: "PC · Full Build",
+            tags: "PC · Warzone Only",
             links: [
                 { label: "Download | Google Drive", url: "https://drive.google.com/drive/folders/13pPhBcKQrdfGzIgpUf7ChQ8mi83uMyjc?usp=sharing" }
             ]
@@ -140,7 +140,7 @@ const buildsData = {
         {
             title: "Modern Warfare v1.36",
             img: "images/mw2019/136.jpg",
-            tags: "79GB · Full Build",
+            tags: "79GB · Warzone Only",
             links: [
                 { label: "Download | Google Drive", url: "https://drive.google.com/file/d/1kpAqlOOvv06I7WBLg5jLAobKbx13k7vQ/view?usp=sharing" }
             ]
@@ -206,7 +206,7 @@ const buildsData = {
         {
             title: "Modern Warfare v1.23",
             img: "images/mw2019/123.jpg",
-            tags: "92GB · Full Build",
+            tags: "92GB · Warzone Only",
             links: [
                 { label: "Download | Google Drive", url: "https://drive.google.com/file/d/1psGkq4oD-YI2ylCKtadb0T-BPo_Z5CkZ/view?usp=sharing" }
             ]
@@ -230,7 +230,7 @@ const buildsData = {
         {
             title: "Modern Warfare v1.03",
             img: "images/mw2019/103.jpg",
-            tags: "103GB · First MP + WZ · Full Build",
+            tags: "103GB  · No Warzone! · Full Build · Russian Only",
             links: [
                 { label: "Download | Google Drive", url: "https://drive.google.com/file/d/1fnvi2rfPhOB3cVPd2GrJXx8DkpX5pHa0/view?usp=sharing" }
             ]
@@ -248,7 +248,7 @@ const buildsData = {
         {
             title: "(Almost) Retail (1.34.0)",
             img: "images/bocw/retail.jpg",
-            tags: "60GB · Retail",
+            tags: "143GB · Retail",
             links: [
                 { label: "Download", url: "https://drive.google.com/file/d/1oY6BohvOlfpZ1Km0R0thrZLHlMVEVPBs/view?usp=sharing" }
             ]
@@ -288,6 +288,38 @@ const buildsData = {
             ]
         },
         {
+            title: "Vanguard 1.24 (CDL Build)",
+            img: "images/vg/124.jpg",
+            tags: "Unavailable",
+            links: [
+                { label: "Unavailable", url: "#", disabled: true }
+            ]
+        },
+        {
+            title: "Vanguard 1.16",
+            img: "images/vg/116.jpg",
+            tags: "Unavailable",
+            links: [
+                { label: "Unavailable", url: "#", disabled: true }
+            ]
+        },
+        {
+            title: "Vanguard 1.14",
+            img: "images/vg/114.jpg",
+            tags: "Unavailable",
+            links: [
+                { label: "Unavailable", url: "#", disabled: true }
+            ]
+        },
+        {
+            title: "Vanguard 1.10",
+            img: "images/vg/retail.jpg",
+            tags: "Unavailable",
+            links: [
+                { label: "Unavailable", url: "#", disabled: true }
+            ]
+        },
+        {
             title: "Vanguard Public Beta",
             img: "images/vg/beta.jpg",
             tags: "15GB · Beta",
@@ -308,7 +340,7 @@ const buildsData = {
         {
             title: "MWII Early Access Campaign",
             img: "images/mwii/ea.jpg",
-            tags: "PC · Campaign Only",
+            tags: "30GB · Campaign Only",
             links: [
                 { label: "Download", url: "https://drive.google.com/file/d/1zrkUtXsCkK72lXmRZDJHG3WBdwkj3Zy2/view?usp=sharing" }
             ]
@@ -407,6 +439,14 @@ const buildsData = {
             tags: "13GB· Retail",
             links: [
                 { label: "Download", url: "https://drive.google.com/file/d/1vP4yBKGWXhfadvIbgNmNIXaypLqNzGIi/view?usp=sharing" }
+            ]
+        },
+        {
+            title: "World At War",
+            img: "images/other/waw_ds.jpg",
+            tags: "20MB· Nintendo DS",
+            links: [
+                { label: "Download", url: "https://drive.google.com/file/d/1yIfg2ZGgIGKeuUZR793gXuTCJ0qs8-7s/view?usp=drive_link" }
             ]
         },
                 {
