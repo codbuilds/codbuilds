@@ -56,6 +56,14 @@ const buildsData = {
             ]
         },
         {
+            title: "Modern Warfare v1.58",
+            img: "images/mw2019/158.jpg",
+            tags: "Unavailable",
+            links: [
+                { label: "Unavailable", url: "#", disabled: true }
+            ]
+        },
+        {
             title: "Modern Warfare v1.57",
             img: "images/mw2019/157.jpg",
             tags: "139GB · MP + WZ",
