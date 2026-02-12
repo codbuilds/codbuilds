@@ -22,9 +22,10 @@ const buildsData = {
         {
             title: "Modern Warfare v1.64",
             img: "images/mw2019/164.jpg",
-            tags: "BROKEN LINK · Full Build",
+            tags: "78GB · Warzone Only",
             links: [
-                { label: "Download | Dropbox (BROKEN)", url: "https://www.dropbox.com/scl/fi/hy7yngvkss56l45y65d91/CodMW164.5.7z?dl=0" }
+                { label: "Buzzheavier (Faster)", url: "https://buzzheavier.com/5y6jr9wc2end" },
+                { label: "Download | Dropbox (BROKEN)", url: "#", disabled: true }
             ]
         },
         {
@@ -39,7 +40,7 @@ const buildsData = {
         {
             title: "Modern Warfare v1.61",
             img: "images/mw2019/161.jpg",
-            tags: "80GB · Warzone Only",
+            tags: "Unavailable",
             links: [
                 // { label: "Download | Buzzheavier", url: "https://buzzheavier.com/lfgww8y67uh9" },
                 { label: "Unavailable", url: "#", disabled: true }
