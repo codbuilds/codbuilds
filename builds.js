@@ -401,7 +401,7 @@ const buildsData = {
         {
             title: "Black Ops 6 PS4 Alpha",
             img: "images/bo6/alpha.jpg",
-            tags: "25GB · Alpha (JB Playstaion Only)",
+            tags: "25GB · Alpha (JB Playstation Only)",
             links: [
                 { label: "Download", url: "https://drive.google.com/file/d/1sJ8bDmiXX8BJuiG3SoYMypGtwEZlYEJu/view?usp=sharing" }
             ]
