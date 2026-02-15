@@ -24,8 +24,8 @@ const buildsData = {
             img: "images/mw2019/164.jpg",
             tags: "78GB · Warzone Only",
             links: [
-                { label: "Buzzheavier (Faster)", url: "https://buzzheavier.com/5y6jr9wc2end" },
-                { label: "Download | Dropbox (BROKEN)", url: "#", disabled: true }
+                { label: "Download | Buzzheavier (Faster)", url: "https://buzzheavier.com/5y6jr9wc2end" },
+                { label: "Download | Gofile", url: "https://gofile.io/d/KnLwQQ", disabled: false }
             ]
         },
         {
@@ -33,8 +33,8 @@ const buildsData = {
             img: "images/mw2019/163.jpg",
             tags: "156GB · Full Build",
             links: [
-                { label: "Google Drive", url: "https://drive.google.com/drive/folders/1QXzzGVOuHbIGTjKOsUjYlaSF33jFkGMB?usp=sharing" },
-                { label: "Buzzheavier (Faster)", url: "https://buzzheavier.com/d1z6oz6cb0ey" }
+                { label: "Download | Google Drive", url: "https://drive.google.com/drive/folders/1QXzzGVOuHbIGTjKOsUjYlaSF33jFkGMB?usp=sharing" },
+                { label: "Download | Buzzheavier (Faster)", url: "https://buzzheavier.com/d1z6oz6cb0ey" }
             ]
         },
         {
@@ -116,8 +116,8 @@ const buildsData = {
         },
         {
             title: "Modern Warfare v1.42",
-            img: "images/mw2019/142.png",
-            tags: "PC · Warzone Only",
+            img: "images/mw2019/142.jpg",
+            tags: "84GB · PC · Warzone Only",
             links: [
                 { label: "Download | Google Drive", url: "https://drive.google.com/drive/folders/13pPhBcKQrdfGzIgpUf7ChQ8mi83uMyjc?usp=sharing" }
             ]
@@ -173,7 +173,7 @@ const buildsData = {
         },
         {
             title: "Modern Warfare v1.31",
-            img: "images/mw2019/131.png",
+            img: "images/mw2019/131.jpg",
             tags: "Unavailable",
             links: [
                 { label: "Unavailable", url: "#", disabled: true }
@@ -396,6 +396,14 @@ const buildsData = {
             tags: "48GB · Singleplayer Only",
             links: [
                 { label: "Download", url: "https://drive.google.com/file/d/1SWNHFkQ6HeA7CsqzkByTCHplpjFi6JU_/view?usp=sharing" }
+            ]
+        },
+        {
+            title: "Black Ops 6  Beta",
+            img: "images/bo6/beta.jpg",
+            tags: "58GB · PC",
+            links: [
+                { label: "Download | Internet Archive", url: "https://archive.org/details/callofdutyblackops4pcbeta/Black+Ops+6+Beta+(8.9.24+20.37+pm)/telescopeCache/05565c2fc15a90e6d18ca31218379ae5.telescope_content", disabled: false }
             ]
         },
         {
