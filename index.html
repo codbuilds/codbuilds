@@ -54,6 +54,18 @@
           <span class="nav-label">Other</span>
         </div>
       </nav>
+
+      <div class="nav-item" id="toggle-unavailable" title="Toggle Unavailable Builds">
+        <svg class="nav-icon eye-open" viewBox="0 0 24 24" fill="white" style="display: block;">
+          <path
+            d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+        </svg>
+        <svg class="nav-icon eye-closed" viewBox="0 0 24 24" fill="white" style="display: none;">
+          <path
+            d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2z" />
+        </svg>
+      </div>
+
     </aside>
 
     <div class="content-wrapper">
@@ -91,7 +103,29 @@
             </div>
           </div>
 
-          <div class="build-grid"></div>
+          <h3 class="era-header text-vg-sku active">
+            <svg class="era-arrow" viewBox="0 0 24 24">
+              <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+            </svg>
+            <img src="images/vg/vgicon.png" alt="VG" />
+          </h3>
+          <div id="mw-vg-grid" class="build-grid"></div>
+
+          <h3 class="era-header text-cw-sku active">
+            <svg class="era-arrow" viewBox="0 0 24 24">
+              <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+            </svg>
+            <img src="images/bocw/cwicon.png" alt="CW" />
+          </h3>
+          <div id="mw-cw-grid" class="build-grid"></div>
+
+          <h3 class="era-header text-mw-sku active">
+            <svg class="era-arrow" viewBox="0 0 24 24">
+              <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+            </svg>
+            <img src="images/mw2019/mwicon.png" alt="MW" />
+          </h3>
+          <div id="mw-mw-grid" class="build-grid"></div>
         </section>
 
         <!-- BOCW -->
@@ -106,7 +140,6 @@
               <p class="font-htr">Retail, beta, and alpha builds archived. All links are google drive.</p>
             </div>
           </div>
-
           <div class="build-grid"></div>
         </section>
 
@@ -208,6 +241,9 @@
         const tabs = Array.from(document.querySelectorAll('.nav-item'));
         const sections = Array.from(document.querySelectorAll('.game-section'));
         const bgContainer = document.getElementById('bg-container');
+        const toggleBtn = document.getElementById('toggle-unavailable');
+        const eyeOpen = toggleBtn.querySelector('.eye-open');
+        const eyeClosed = toggleBtn.querySelector('.eye-closed');
 
         const bgMap = {
           mw2019: { full: 'images/backgrounds/mw2019.jpg', tiny: 'images/background/mw_lh.jpg' },
@@ -223,6 +259,17 @@
         const preloadedImages = [];
 
         function init() {
+          // check visibility preference
+          const hideUnavailable = localStorage.getItem('hideUnavailable') === 'true';
+          if (hideUnavailable) {
+            document.body.classList.add('hide-unavailable');
+            eyeOpen.style.display = 'none';
+            eyeClosed.style.display = 'block';
+          } else {
+            eyeOpen.style.display = 'block';
+            eyeClosed.style.display = 'none';
+          }
+
           // keep tab on refresh
           const savedTab = localStorage.getItem('activeTab');
           if (savedTab) {
@@ -261,7 +308,37 @@
             preloadedImages.push(img);
           });
 
+          renderBuilds();
           animateCards();
+          setupCollapsibles();
+
+          // hide toggle logic
+          toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('hide-unavailable');
+            const isHidden = document.body.classList.contains('hide-unavailable');
+            localStorage.setItem('hideUnavailable', isHidden);
+
+            if (isHidden) {
+              eyeOpen.style.display = 'none';
+              eyeClosed.style.display = 'block';
+            } else {
+              eyeOpen.style.display = 'block';
+              eyeClosed.style.display = 'none';
+            }
+          });
+        }
+
+        function setupCollapsibles() {
+          const headers = document.querySelectorAll('.era-header');
+          headers.forEach(header => {
+            header.addEventListener('click', () => {
+              header.classList.toggle('active');
+              const content = header.nextElementSibling;
+              if (content && content.classList.contains('build-grid')) {
+                content.classList.toggle('collapsed');
+              }
+            });
+          });
         }
 
         function animateCards() {
@@ -290,7 +367,9 @@
         }
 
         tabs.forEach((tab, index) => {
-          tab.addEventListener('click', () => {
+          tab.addEventListener('click', (e) => {
+            if (tab.id === 'toggle-unavailable') return;
+
             if (tab.classList.contains('active')) return;
 
             const currentTab = document.querySelector('.nav-item.active');
@@ -351,32 +430,79 @@
         }
 
         function renderBuilds() {
+          if (typeof buildsData === 'undefined') {
+            console.error('buildsData is undefined');
+            return;
+          }
           Object.keys(buildsData).forEach(gameKey => {
-            const container = document.querySelector(`#${gameKey} .build-grid`);
-            if (!container) return;
+            if (gameKey === 'mw2019') {
+              const vgBuilds = [];
+              const cwBuilds = [];
+              const mwBuilds = [];
 
-            container.innerHTML = buildsData[gameKey].map(build => {
-              // gen links html
-              const linksHtml = build.links.map(link => {
-                const variants = ['clip-1', 'clip-2', 'clip-3', 'clip-4', 'clip-5', 'clip-6'];
-                const randomClass = variants[Math.floor(Math.random() * variants.length)];
+              buildsData.mw2019.forEach(build => {
+                const match = build.title.match(/v(\d+\.\d+)/);
+                const ver = match ? parseFloat(match[1]) : 0;
 
-                if (link.disabled) {
-                  return `<a target="_blank" href="#" class="disabled ${randomClass}">${link.label}</a>`;
+                // based on current uploaded builds
+                // s4: 1.46 - 1.67
+                // t9: 1.30 - 1.45
+                // iw8: Beta - 1.28
+                if (ver >= 1.46) {
+                  vgBuilds.push(build);
+                } else if (ver >= 1.30) {
+                  cwBuilds.push(build);
+                } else {
+                  mwBuilds.push(build);
                 }
-                return `<a target="_blank" href="${link.url}" class="${randomClass}">${link.label}</a>`;
-              }).join('');
+              });
 
-              // gen tags html (parsing str)
-              const tagsHtml = build.tags.split('·')
-                .map(s => s.trim())
-                .filter(s => s.length > 0)
-                .map(part => `<div class="build-tag">${part}</div>`)
-                .join('');
+              const vgContainer = document.getElementById('mw-vg-grid');
+              const cwContainer = document.getElementById('mw-cw-grid');
+              const mwContainer = document.getElementById('mw-mw-grid');
 
-              return `
-                <div class="build">
-                  <img src="${build.img}" alt="${build.title}" loading="lazy" decoding="async" />
+              if (vgContainer) vgContainer.innerHTML = generateGridHtml(vgBuilds);
+              if (cwContainer) cwContainer.innerHTML = generateGridHtml(cwBuilds);
+              if (mwContainer) mwContainer.innerHTML = generateGridHtml(mwBuilds);
+
+            } else {
+              const container = document.querySelector(`#${gameKey} .build-grid`);
+              if (container) {
+                container.innerHTML = generateGridHtml(buildsData[gameKey]);
+              }
+            }
+          });
+        }
+
+        function generateGridHtml(builds) {
+          return builds.map(build => {
+            // gen links html
+            const linksHtml = build.links.map(link => {
+              const variants = ['clip-1', 'clip-2', 'clip-3', 'clip-4', 'clip-5', 'clip-6'];
+              const randomClass = variants[Math.floor(Math.random() * variants.length)];
+
+              if (link.disabled) {
+                return `<a target="_blank" href="#" class="disabled ${randomClass}">${link.label}</a>`;
+              }
+              return `<a target="_blank" href="${link.url}" class="${randomClass}">${link.label}</a>`;
+            }).join('');
+
+            // gen tags html (parsing str)
+            const tagsHtml = build.tags.split('·')
+              .map(s => s.trim())
+              .filter(s => s.length > 0)
+              .map(part => `<div class="build-tag">${part}</div>`)
+              .join('');
+
+            // check for unavailable
+            const isUnavailable = build.tags.toLowerCase().includes('unavailable');
+            const unavailableClass = isUnavailable ? 'unavailable' : '';
+
+            return `
+                <div class="build ${unavailableClass}">
+                  <div class="build-img-wrapper">
+                    <img src="${build.img}" alt="${build.title}" loading="lazy" decoding="async" />
+                  </div>
                   <div class="build-body">
                     <h3>${build.title}</h3>
                     <span>${tagsHtml}</span>
@@ -384,16 +510,11 @@
                   </div>
                 </div>
               `;
-            }).join('');
-          });
+          }).join('');
         }
 
-        renderBuilds();
-        init();
-
-        window.ondragstart = function () { return false; };
-
         window.onload = function () {
+          init();
           document.onselectstart = function () { return false; };
           document.oncontextmenu = function () { return false; };
         };
@@ -404,6 +525,8 @@
           }
         });
       </script>
+    </div>
+  </div>
 </body>
 
 </html>

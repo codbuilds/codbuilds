@@ -1,5 +1,7 @@
 const buildsData = {
+    // --- MODERN WARFARE ---
     mw2019: [
+        // Retail - 1.46
         {
             title: "Modern Warfare v1.67",
             img: "images/mw2019/167.jpg",
@@ -42,7 +44,7 @@ const buildsData = {
             img: "images/mw2019/161.jpg",
             tags: "Unavailable",
             links: [
-                // { label: "Download | Buzzheavier", url: "https://buzzheavier.com/lfgww8y67uh9" },
+                { label: "Download | Buzzheavier", url: "https://buzzheavier.com/lfgww8y67uh9" },
                 { label: "Unavailable", url: "#", disabled: true }
             ]
         },
@@ -97,6 +99,7 @@ const buildsData = {
                 { label: "Source 2 | Google Drive", url: "https://drive.google.com/file/d/1tO2smr_mq8xwdeOowT2cDgSW9nNuQVS8/view?usp=sharing" }
             ]
         },
+        // 1.45 - 1.30
         {
             title: "Modern Warfare v1.45",
             img: "images/mw2019/145.jpg",
@@ -188,6 +191,7 @@ const buildsData = {
                 { label: "MP + WZ | Google Drive", url: "https://drive.google.com/file/d/1KgGGJ2b_iX_vUe4JJhBCwkjYhe1KYsxd/view?usp=drivesdk" }
             ]
         },
+        // 1.28 - Public Beta
         {
             title: "Modern Warfare v1.28",
             img: "images/mw2019/128.jpg",
@@ -261,6 +265,8 @@ const buildsData = {
             ]
         }
     ],
+
+    // --- BLACK OPS COLD WAR ---
     bocw: [
         {
             title: "(Almost) Retail (1.34.0)",
@@ -295,6 +301,8 @@ const buildsData = {
             ]
         }
     ],
+
+    // --- VANGUARD ---
     vg: [
         {
             title: "Retail (Latest, 1.26.1)",
@@ -345,6 +353,8 @@ const buildsData = {
             ]
         }
     ],
+
+    // --- MODERN WARFARE II ---
     mwii: [
         {
             title: "MWII Retail",
@@ -371,6 +381,8 @@ const buildsData = {
             ]
         }
     ],
+
+    // --- MODERN WARFARE III ---
     mwiii: [
         {
             title: "MWIII Retail",
@@ -389,6 +401,8 @@ const buildsData = {
             ]
         }
     ],
+
+    // --- BLACK OPS 6 ---
     bo6: [
         {
             title: "Black Ops 6 Singleplayer 11.1",
@@ -399,7 +413,7 @@ const buildsData = {
             ]
         },
         {
-            title: "Black Ops 6  Beta",
+            title: "Black Ops 6 Beta",
             img: "images/bo6/beta.jpg",
             tags: "58GB · PC",
             links: [
@@ -415,6 +429,8 @@ const buildsData = {
             ]
         }
     ],
+
+    // --- INFINITE WARFARE ---
     iw: [
         {
             title: "(Latest) Retail - IW7-Mod",
@@ -425,6 +441,7 @@ const buildsData = {
             ]
         }
     ],
+    // --- OTHER BUILDS ---
     other: [
         {
             title: "Black Ops 1",
@@ -474,7 +491,7 @@ const buildsData = {
                 { label: "Download", url: "https://drive.google.com/file/d/1yIfg2ZGgIGKeuUZR793gXuTCJ0qs8-7s/view?usp=drive_link" }
             ]
         },
-                {
+        {
             title: "Modern Warfare 3 (Defiance)",
             img: "images/other/mw3-ds.jpg",
             tags: "32MB· Nintendo DS",
