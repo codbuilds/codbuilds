@@ -341,7 +341,7 @@ const buildsData = {
             img: "images/vg/retail.jpg",
             tags: "32GB · MP Only + CHRISTMAS EVENT",
             links: [
-                { label: "Download", url: "https://gofile.io/d/URNkTZ" }
+                { label: "Download (Gofile)", url: "https://gofile.io/d/URNkTZ" }
             ]
         },
         {
