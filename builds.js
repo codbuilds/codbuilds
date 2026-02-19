@@ -323,9 +323,9 @@ const buildsData = {
         {
             title: "Vanguard 1.16",
             img: "images/vg/116.jpg",
-            tags: "Unavailable",
+            tags: "39GB · MP Only",
             links: [
-                { label: "Unavailable", url: "#", disabled: true }
+                { label: "Download (Gofile)", url: "https://gofile.io/d/44BTlB" }
             ]
         },
         {
@@ -339,9 +339,9 @@ const buildsData = {
         {
             title: "Vanguard 1.10",
             img: "images/vg/retail.jpg",
-            tags: "Unavailable",
+            tags: "32GB · MP Only + CHRISTMAS EVENT",
             links: [
-                { label: "Unavailable", url: "#", disabled: true }
+                { label: "Download", url: "https://gofile.io/d/URNkTZ" }
             ]
         },
         {
