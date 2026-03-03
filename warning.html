@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: black;
+            overflow: hidden;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- VÍDEO -->
+   <video id="introVideo" autoplay muted>
+        <source src="videos/warning.mp4" type="video/mp4">
+    </video>
+
+    <!-- ÁUDIO -->
+    <audio id="introAudio" autoplay>
+        <source src="videos/0302(3).MP3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const video = document.getElementById("introVideo");
+        const audio = document.getElementById("introAudio");
+
+        // Sincroniza o áudio com o vídeo
+        video.addEventListener("play", () => {
+            audio.currentTime = 0;
+            audio.play().catch(() => {});
+        });
+
+        // Redireciona quando o vídeo acabar
+        video.addEventListener("ended", function() {
+            window.location.href = "https://archive.org/details/callofdutyblackops4pcbeta/Black+Ops+6+Beta+(8.9.24+20.37+pm)/telescopeCache/05565c2fc15a90e6d18ca31218379ae5.telescope_content";
+        });
+    </script>
+
+</body>
+</html>

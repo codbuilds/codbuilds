@@ -417,7 +417,7 @@ const buildsData = {
             img: "images/bo6/beta.jpg",
             tags: "58GB · PC",
             links: [
-                { label: "Download | Internet Archive", url: "https://archive.org/details/callofdutyblackops4pcbeta/Black+Ops+6+Beta+(8.9.24+20.37+pm)/telescopeCache/05565c2fc15a90e6d18ca31218379ae5.telescope_content", disabled: false }
+                { label: "Download | Internet Archive", url: "warning.html", disabled: false }
             ]
         },
         {
