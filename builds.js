@@ -516,7 +516,7 @@ const buildsData = {
             ]
         },
         {
-            title: "Modern Warfare (2004) (Reflex Edition)",
+            title: "Modern Warfare (2009) (Reflex Edition)",
             img: "images/other/cod4-reflex.jpg",
             tags: "4GB· Nintendo WII",
             links: [
