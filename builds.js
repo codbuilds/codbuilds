@@ -524,7 +524,7 @@ const buildsData = {
             ]
         },
         {
-            title: "Modern Warfare (2004) (DS Edition)",
+            title: "Modern Warfare (2007) (DS Edition)",
             img: "images/other/cod4-ds.jpg",
             tags: "31MB· Nintendo DS",
             links: [
